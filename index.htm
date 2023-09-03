@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<style>
+	body{
+		background-color:black;
+		color:white;font-size:30pt;
+		font-family:tahoma;margin-left:500px;
+	}
+</style>
+
+<h2 style="background-color:white;color:black;margin-right:527px;">JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="demo"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+
+</body>
+</html>
